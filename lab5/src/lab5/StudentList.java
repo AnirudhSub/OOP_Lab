@@ -27,10 +27,26 @@ public class StudentList {
 	value matches with lastName parameter of this method. If no such
 	students is found then it returns null. */
 	// Write Your Code From Here
+		Student[] ofLastName = new Student[list.length];
+		int j = 0;
+		for(int i = 0 ; i < list.length ; i++ ) {
+			if(list[i].getName().getLastName() == lastName) {
+				ofLastName[j++] = list[i];
+			}
+		}
+		return ofLastName;
 	}
 	public static Student[] getStudentsInRange(int minAge, int maxAge) {
 	/* This method returns all the students whose age falls between minAge
 	and maxAge (both parameters inclusive) */
 	// Write Your Code From Here
+		Student[] inRange = new Student[list.length];
+		int j = 0 ;
+		for(int i = 0 ; i < list.length ; i++) {
+			if(list[i].getAge()<maxAge && list[i].getAge()>minAge) {
+				inRange[j++] = list[i];
+			}
+		}
+		return inRange;
 	}
 }

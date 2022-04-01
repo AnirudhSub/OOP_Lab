@@ -6,8 +6,8 @@ public class Student {
 	/* Complete the Student class by adding proper constructor,accessor methods and
 	by adding any other method whichare required as per specification */
 	// Write Your Code From Here
-	public String getName() {
-		return this.name.getName();
+	public Name getName() {
+		return this.name;
 	}
 	public int getAge() {
 		return this.age;
