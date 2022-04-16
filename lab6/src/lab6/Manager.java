@@ -43,5 +43,8 @@ public class Manager extends Employee {
 		super.setSalary(salary);
 	}
 	//mutators done
-	
+	@Override
+	public String toString() {
+		return "[ Name : "+ this.getName() + " ; Salary : "+ this.getSalary() + " ; Department : " + this.getDepartment() + " ]";
+	}
 }
