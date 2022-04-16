@@ -18,5 +18,26 @@ public class Employee {
 		this.salary = salary;
 	}
 	//Constructors done
+	//Accessor methods
+	public String getName() {
+		return name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	//accessors done
+	//mutator methods
+	public void setName(String newname) {
+		name = newname;
+	}
+	public void setSalary(double newsalary) {
+		salary = newsalary;
+	}
+	//mutators done
 	
+	//toString
+	@Override
+	public String toString() {
+		return "[ Name =  '"+  name +"' ; Salary = "+ salary + "]";
+	}
 }
